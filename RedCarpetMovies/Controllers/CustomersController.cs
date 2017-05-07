@@ -44,7 +44,7 @@ namespace RedCarpetMovies.Controllers
                     MembershipTypes = _context.MembershipTypes.ToList()
                 };
 
-                return View("CustomerForm");
+                return View("CustomerForm", viewModel);
             }
             if (customer.Id == 0)
                 _context.Customers.Add(customer);

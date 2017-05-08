@@ -15,6 +15,8 @@ namespace RedCarpetMovies.App_Start
             //Domain to DTO
             Mapper.CreateMap<Customer, CustomerDto>();
             Mapper.CreateMap<Movie, MovieDto>();
+            Mapper.CreateMap<MembershipType, MembershipTypeDto>();
+            Mapper.CreateMap<Genre, GenreDto>();
 
             //Dto to Domain
             Mapper.CreateMap<CustomerDto, Customer>()

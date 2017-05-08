@@ -9,6 +9,7 @@ using RedCarpetMovies.ViewModels;
 
 namespace RedCarpetMovies.Controllers
 {
+    
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context;

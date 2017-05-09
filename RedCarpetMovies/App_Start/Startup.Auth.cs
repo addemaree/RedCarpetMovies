@@ -54,9 +54,9 @@ namespace RedCarpetMovies
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "463590067311916",
+               appSecret: "88aeb4d7a1d07e09ccc2cc30336eeaac");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

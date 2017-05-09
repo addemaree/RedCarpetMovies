@@ -6,15 +6,48 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    
+    <!--Custom Font-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
     @Html.Partial("_NavBar")
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Red Carpet Movies</p>
+        <footer class="simple-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; @DateTime.Now.Year - Red Carpet Movies All Rights Reserved</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons" style="padding-left: 17%;">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/addemaree/ElevenNote2.0-Final"><i class="fa fa-github-alt fa-3x"></i></a>
+                            </li>
+                        </ul>
+                        <p style="margin-top: 20px; padding-left: 12%;"><a href="https://github.com/addemaree" target="_blank">Powered by Adam Demaree</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 

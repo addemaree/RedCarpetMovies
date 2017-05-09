@@ -9,7 +9,7 @@ using RedCarpetMovies.ViewModels;
 
 namespace RedCarpetMovies.Controllers
 {
-    
+
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context;
@@ -32,6 +32,7 @@ namespace RedCarpetMovies.Controllers
                 Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
+
             return View("CustomerForm", viewModel);
         }
 
@@ -49,26 +50,25 @@ namespace RedCarpetMovies.Controllers
 
                 return View("CustomerForm", viewModel);
             }
+
             if (customer.Id == 0)
                 _context.Customers.Add(customer);
             else
             {
                 var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
-
                 customerInDb.Name = customer.Name;
                 customerInDb.Birthdaydate = customer.Birthdaydate;
                 customerInDb.MembershipTypeId = customer.MembershipTypeId;
                 customerInDb.IsSubscribedToNewsLetter = customer.IsSubscribedToNewsLetter;
             }
-            
+
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Customers");
         }
 
-        public ActionResult Index()
+        public ViewResult Index()
         {
-
             return View();
         }
 
@@ -77,10 +77,9 @@ namespace RedCarpetMovies.Controllers
             var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
 
             if (customer == null)
-
                 return HttpNotFound();
 
-                return View(customer);
+            return View(customer);
         }
 
         public ActionResult Edit(int id)
@@ -88,9 +87,7 @@ namespace RedCarpetMovies.Controllers
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
 
             if (customer == null)
-            {
                 return HttpNotFound();
-            }
 
             var viewModel = new CustomerFormViewModel
             {
@@ -99,7 +96,6 @@ namespace RedCarpetMovies.Controllers
             };
 
             return View("CustomerForm", viewModel);
-
         }
     }
 }

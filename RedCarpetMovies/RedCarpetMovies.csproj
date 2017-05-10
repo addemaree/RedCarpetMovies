@@ -435,7 +435,7 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
-    <Content Include="Content\img\rc-background-photo-wheel.jpg" />
+    <Content Include="Content\img\rc-background-photo-wheel-final.jpg" />
     <Content Include="Content\img\rc-background-photo.jpg" />
     <Content Include="Content\img\rc-jumbo-photo.jpeg" />
     <Content Include="Content\toastr.css" />
@@ -585,6 +585,7 @@
     <Content Include="Views\Movies\MovieForm.cshtml" />
     <Content Include="Views\Movies\ReadOnlyList.cshtml" />
     <Content Include="Views\Rentals\New.cshtml" />
+    <Content Include="Views\Customers\ReadOnlyIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

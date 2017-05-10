@@ -2,7 +2,10 @@
     padding-top: 70px;
     padding-bottom: 20px;
     background-color: black;
-    background-image: url(img/rc-background-photo-wheel.jpg);
+    background-image: url(img/rc-background-photo-wheel-final.jpg);
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /*Jumbotron*/
@@ -56,6 +59,127 @@ h2 {
     margin-left: 130px;
     font-size: 20px;
 }
+
+/*Rental Form View*/
+
+#rental-form-heading {
+    color: white;
+    font-size: 60px;
+    text-shadow: 0px 2px 0 red, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-left: 20px;
+}
+
+.rental-form-label {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0px 2px 0 red, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#newRental {
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    padding-bottom: 25px;
+    width: 60%;
+}
+
+#rental-label {
+    margin-right: 285px;
+}
+
+/*Customer Page*/
+#customers {
+    background-color: black;
+    opacity: 0.9;
+    color: red;
+    font-weight: bold;
+}
+
+label {
+    color: red;
+}
+
+#customers-info {
+    color: red;
+}
+
+#new-customer-form {
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    padding-bottom: 25px;
+    width: 60%;
+}
+
+.form-control {
+    margin-left: 200px;
+}
+
+/*Movies*/
+
+#movies {
+    background-color: black;
+    opacity: 0.9;
+    color: red;
+    font-weight: bold;
+}
+
+/*Register/Login Pages*/
+
+#RegisterForm {
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 190px;
+    padding: 25px 0px 25px 155px;
+    width: 75%;
+}
+
+#register-form {
+    font-size: 15px;
+}
+
+#register-textbox {
+    margin-left: -140px;
+}
+.text-danger {
+    text-align: left;
+}
+#register-button {
+    margin: auto;
+}
+
+#login-subheading {
+    color: white;
+    font-size: 30px;
+    /*text-shadow: 0px 2px 0 red, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+}
+
+#loginForm {
+    background-color: black;
+    opacity: 0.8;
+    padding: 25px;
+    width: 75%;
+    margin-top: 20px;
+}
+
+#login-textbox {
+    margin-left: -200px;
+}
+
+#socialLoginForm {
+    background-color: black;
+    opacity: 0.8;
+    padding: 25px;
+    margin: 20px -45px 0px 0px;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;

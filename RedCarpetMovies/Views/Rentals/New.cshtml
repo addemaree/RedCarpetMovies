@@ -4,19 +4,19 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>New Rental Form</h2>
+<h2 id="rental-form-heading">New Rental Form</h2>
 
 <form id="newRental">
     <div class="form-group">
-        <label>Customer</label>
-        <div class="tt-container">
+        <label class="rental-form-label">Customer</label>
+        <div class="tt-container" id="rental-label">
             <input id="customer" name="customer" data-rule-validCustomer="true" required type="text" value="" class="form-control" />
         </div>
     </div>
 
     <div class="form-group">
-        <label>Movie</label>
-        <div class="tt-container">
+        <label class="rental-form-label">Movie</label>
+        <div class="tt-container" id="rental-label">
             <input id="movie" name="movie" data-rule-atLeastOneMovie="true" type="text" value="" class="form-control" />
         </div>
     </div>

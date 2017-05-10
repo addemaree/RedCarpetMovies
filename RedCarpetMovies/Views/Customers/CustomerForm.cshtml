@@ -4,23 +4,24 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>New Customer</h2>
+<h2 id="rental-form-heading">New Customer</h2>
 
 @using (Html.BeginForm("Save", "Customers"))
 {
+    <div id="new-customer-form">
     @Html.ValidationSummary(true, "Please fix the following errors:")
     <div class="form-group">
-        @Html.LabelFor(m => m.Customer.Name)
+        @Html.LabelFor(m => m.Customer.Name, new { @class = "rental-form-label"})
         @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
         @Html.ValidationMessageFor(m => m.Customer.Name)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Customer.MembershipTypeId)
+        @Html.LabelFor(m => m.Customer.MembershipTypeId, new { @class = "rental-form-label" })
         @Html.DropDownListFor(m => m.Customer.MembershipTypeId, new SelectList (Model.MembershipTypes, "Id", "Name"), "Select Membership Type", new { @class = "form-control" })
         @Html.ValidationMessageFor(m => m.Customer.MembershipTypeId)   
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Customer.Birthdaydate)
+        @Html.LabelFor(m => m.Customer.Birthdaydate, new { @class = "rental-form-label" })
         @Html.TextBoxFor(m => m.Customer.Birthdaydate, "{0:d MMM yyyy}", new { @class = "form-control" })
         @Html.ValidationMessageFor(m => m.Customer.Birthdaydate)
     </div>
@@ -34,7 +35,7 @@
     @Html.HiddenFor(m => m.Customer.Id)
     @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-primary">Save</button>
-
+    </div>
 }
 
 @section scripts

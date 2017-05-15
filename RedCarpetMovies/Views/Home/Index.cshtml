@@ -10,7 +10,7 @@
     <div class="col-md-3" id="col-1">
         <h2>Sign Up a New Customer</h2>
         <hr/>
-        <p>
+        <p class="div-info">
             New customer in the store? At just the click of a button, you can make sure all the requirements of a successful cinematic adventure come true!
         </p>
         <p>@Html.ActionLink("Sign Up", "New", "Customers", null, new { @class = "btn btn-info" })</p>
@@ -18,13 +18,13 @@
     <div class="col-md-3" id="col-2">
         <h2>Rent Movies Now</h2>
         <hr/>
-        <p>At the click of a button, you can help the customer pick the right movie, check them out efficently, and make sure they get home in time to enjoy their movie experience!</p>
+        <p class="div-info">At the click of a button, you can help the customer pick the right movie, check them out efficently, and make sure they get home in time to enjoy their movie experience!</p>
         <p>@Html.ActionLink("New Rental", "New", "Rentals", null, new { @class = "btn btn-info" })</p>
     </div>
     <div class="col-md-3" id="col-3">
         <h2>Discounts</h2>
         <hr/>
-        <p>Let the customer know about our Membership Discount! With a membership, the customer can receive up to 30 percent off their next rental!</p>
+        <p class="div-info">Let the customer know about our Membership Discount! With a membership, the customer can receive up to 30 percent off their next rental!</p>
         <p>@Html.ActionLink("Discuss Discounts", "New", "Customers", null, new { @class = "btn btn-info" })</p>
     </div>
 </div>

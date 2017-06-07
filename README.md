@@ -17,12 +17,14 @@ A MVC movie store application that allows its employees to rent out movies to cu
 ## Views:
 
 ### Home Page
-
+[![homepage.png](https://s12.postimg.org/wzb9tltil/homepage.png)](https://postimg.org/image/61hcrv8vd/)
 
 ### Customers
-
+[![customerpage.png](https://s13.postimg.org/y31s1dhp3/customerpage.png)](https://postimg.org/image/becl1t0b7/)
 
 ### Movies
-
+[![moviespage.png](https://s1.postimg.org/ysfkg7x1b/moviespage.png)](https://postimg.org/image/wnv7f4vej/)
 
 ### New Rental Form/Customer Form/Add Movie:
+[![rentalformpage.png](https://s14.postimg.org/n212s2hwx/rentalformpage.png)](https://postimg.org/image/jv6j8fxgt/)
+
